@@ -1,6 +1,6 @@
-FROM python:3
+FROM python:3.6.4
 WORKDIR /usr/src/app
 COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
-CMD ["python3", "app.py"]
+CMD ["python", "app.py"]
